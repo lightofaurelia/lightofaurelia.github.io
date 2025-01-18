@@ -73,24 +73,31 @@ particlesJS("particles-js", {
     retina_detect: true,
   });
   
-  // Background Music Control
   document.addEventListener("DOMContentLoaded", () => {
     const music = document.getElementById("background-music");
-    const startMusicButton = document.getElementById("start-music-button");
+    const button = document.getElementById("start-music-button");
   
-    if (music && startMusicButton) {
-      startMusicButton.addEventListener("click", () => {
-        music.play()
-          .then(() => {
-            console.log("Music started successfully");
-            startMusicButton.style.display = "none"; // Hide the button
-          })
-          .catch((error) => {
-            console.error("Error playing music:", error);
-          });
-      });
-    } else {
-      console.error("Music element or button is missing in the DOM.");
+    if (!music) {
+      console.error("Error: Music element is missing in the DOM.");
+      return;
     }
+  
+    if (!button) {
+      console.error("Error: Button element is missing in the DOM.");
+      return;
+    }
+  
+    // Add click event listener to play music and redirect
+    button.addEventListener("click", () => {
+      music.play()
+        .then(() => {
+          console.log("Music started successfully");
+          window.location.href = "main.html";
+        })
+        .catch((error) => {
+          console.error("Error playing music:", error);
+          window.location.href = "main.html"; // Redirect even if music fails
+        });
+    });
   });
   

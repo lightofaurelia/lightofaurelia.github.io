@@ -20,15 +20,12 @@
 
   <!-- Centered Content -->
    <div class="landing-content">
+    <audio id="background-music" loop>
+        <source src="assets/lightofaurelia.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     <button id="start-music-button" class="glitch-effect">Start</button>
   </div>
-
-  <script>
-    // Redirect to the main index.html when the button is clicked
-    document.getElementById('start-music-button').addEventListener('click', () => {
-      window.location.href = 'main.html';
-    });
-  </script>
 
 <script src="scripts/particles.js"></script>
 <script src="scripts/script.js"></script>
