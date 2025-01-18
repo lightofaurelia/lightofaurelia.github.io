@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay loop muted playsinline class="glitch-video">
+      <source src="assets/back.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Centered Content -->
+   <div class="landing-content">
+    <button id="start-music-button" class="glitch-effect">Start</button>
+  </div>
+
+  <script>
+    // Redirect to the main index.html when the button is clicked
+    document.getElementById('start-music-button').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+
+<script src="scripts/particles.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
