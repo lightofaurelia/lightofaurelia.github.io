@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# lightofaurelia.github.io
-=======
 <div align="center">
   <br />
     <a href="https://youtu.be/zA9r5zTllx4" target="_blank">
@@ -448,11 +445,3 @@ detailed explanations, cool features, and exercises to boost your skills. Give i
 <a href="https://jsmastery.pro/next15" target="_blank">
    <img src="https://github.com/user-attachments/assets/b8760e69-1f81-4a71-9108-ceeb1de36741" alt="Project Banner">
 </a>
-<<<<<<< HEAD
-
-## Disclaimer
-
-All design credits go to **[Zentry](https://zentry.com/)**. This project is created purely for **educational purposes** and is not intended for commercial use or public deployment.
->>>>>>> 45bf7f0 (first commit)
-=======
->>>>>>> bd29330 (Update README.md)
